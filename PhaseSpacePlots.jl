@@ -72,7 +72,7 @@ function basin_plot(data; no_lc=false)
     plot!(plt, x_lc[2:end-1], y_lc[2:end-1], linecolor=:black, linewidth=4, legend=false)
 end
 
-res = 0.1
+res = 0.01
 
 data = basin_data(33.,(1., 0.3, 8.), res=res, max_t=1000.)
 bson("data_1.bson", data = data)
